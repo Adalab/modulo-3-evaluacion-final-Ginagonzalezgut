@@ -33,6 +33,7 @@ function App() {
   const characterSelected = characters.find((character) => {
     return character.id === parseInt(characterId);
   });
+
   return (
     <>
       <main>
