@@ -7,7 +7,13 @@ function Filter({ onChangeName }) {
   }
   return (
     <form>
-      <input type="text" name="name" id="name" onChange={handleChange} />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        onChange={handleChange}
+        placeholder="Busca a tu personaje"
+      />
     </form>
   );
 }

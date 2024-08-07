@@ -41,7 +41,11 @@ function App() {
             element={
               <div>
                 <Filter onChangeName={handleFilterName} />
-                <CharacterList characters={filteredCharacters} />
+                {filteredCharacters.length > 0 ? (
+                  <CharacterList characters={filteredCharacters} />
+                ) : (
+                  <p>no hay ningun nombre</p>
+                )}
               </div>
             }
           />

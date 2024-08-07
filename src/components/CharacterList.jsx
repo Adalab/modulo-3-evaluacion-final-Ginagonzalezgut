@@ -1,11 +1,12 @@
 import CharacterCard from "./CharacterCard";
 import PropTypes from "prop-types";
+import "../scss/components/Characters.scss";
 
 function CharacterList({ characters }) {
   const charactersElements = characters.map((character) => {
     return <CharacterCard key={character.name} character={character} />;
   });
-  return <div>{charactersElements}</div>;
+  return <div className="characters">{charactersElements}</div>;
 }
 
 CharacterList.propTypes = {

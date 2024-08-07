@@ -1,13 +1,18 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "../scss/components/Character.scss";
 
 function CharacterCard({ character }) {
   return (
-    <div>
+    <div className="character">
       <Link to={`/character/${character.id}`}>
-        <img src={character.image} alt={character.name} />
-        <h1>{character.name}</h1>
-        <h2>{character.species}</h2>
+        <img
+          className="character__image"
+          src={character.image}
+          alt={character.name}
+        />
+        <h1 className="character__name">{character.name}</h1>
+        <h2 className="character__species">{character.species}</h2>
       </Link>
     </div>
   );

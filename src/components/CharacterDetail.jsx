@@ -12,5 +12,8 @@ function CharacterDetail({ character }) {
     </div>
   );
 }
+CharacterDetail.propTypes = {
+  character: PropTypes.object,
+};
 
 export default CharacterDetail;
