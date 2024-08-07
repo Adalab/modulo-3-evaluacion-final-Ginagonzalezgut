@@ -5,7 +5,7 @@ import "../scss/components/CharacterCard.scss";
 function CharacterCard({ character }) {
   return (
     <div className="character">
-      <Link to={`/character/${character.id}`}>
+      <Link className="character__link" to={`/character/${character.id}`}>
         <img
           className="character__image"
           src={character.image}
