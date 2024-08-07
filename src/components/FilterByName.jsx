@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../scss/components/Filter.scss";
 
-function Filter({ onChangeName, filterName }) {
+function FilterByName({ onChangeName, filterName }) {
   function handleChange(event) {
     event.preventDefault();
     onChangeName(event.target.value);
@@ -23,8 +23,8 @@ function Filter({ onChangeName, filterName }) {
     </form>
   );
 }
-Filter.propTypes = {
+FilterByName.propTypes = {
   filterName: PropTypes.string,
   onChangeName: PropTypes.func,
 };
-export default Filter;
+export default FilterByName;
