@@ -28,10 +28,10 @@ function App() {
   const routeData = matchPath("/character/:characterId", pathname);
   const characterId = routeData !== null ? routeData.params.characterId : "";
 
-  console.log(characters);
   const characterSelected = characters.find((character) => {
     return character.id === parseInt(characterId);
   });
+  console.log(characterSelected);
   return (
     <>
       <main>
@@ -54,7 +54,13 @@ function App() {
           />
           <Route
             path="/character/:characterId"
-            element={<CharacterDetail character={characterSelected} />}
+            element={
+              characterSelected === undefined ? (
+                <p> Sorry :( El personaje que buscas no existe</p>
+              ) : (
+                <CharacterDetail character={characterSelected} />
+              )
+            }
           />
         </Routes>
       </main>
