@@ -11,8 +11,10 @@ function CharacterCard({ character }) {
           src={character.image}
           alt={character.name}
         />
-        <h1 className="character__name">{character.name}</h1>
-        <h2 className="character__species">{character.species}</h2>
+        <div className="character__info">
+          <h1 className="character__name">{character.name}</h1>
+          <h2 className="character__species">{character.species}</h2>
+        </div>
       </Link>
     </div>
   );
