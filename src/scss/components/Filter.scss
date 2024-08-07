@@ -1,0 +1,15 @@
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 50px;
+
+  &__name {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 800px;
+    height: 20px;
+    padding: 20px;
+  }
+}

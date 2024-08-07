@@ -40,7 +40,10 @@ function App() {
             path="/"
             element={
               <div>
-                <Filter onChangeName={handleFilterName} />
+                <Filter
+                  filterName={filterName}
+                  onChangeName={handleFilterName}
+                />
                 {filteredCharacters.length > 0 ? (
                   <CharacterList characters={filteredCharacters} />
                 ) : (

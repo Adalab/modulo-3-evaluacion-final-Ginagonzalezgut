@@ -1,6 +1,6 @@
 import CharacterCard from "./CharacterCard";
 import PropTypes from "prop-types";
-import "../scss/components/Characters.scss";
+import "../scss/components/CharacterList.scss";
 
 function CharacterList({ characters }) {
   const charactersElements = characters.map((character) => {
