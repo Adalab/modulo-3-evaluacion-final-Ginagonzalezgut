@@ -7,6 +7,7 @@ import Filter from "./Filter";
 import { useLocation, matchPath } from "react-router";
 import CharacterDetail from "./CharacterDetail";
 import MessageNotFound from "./MessageNotFound";
+import Header from "./Header";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -32,10 +33,10 @@ function App() {
   const characterSelected = characters.find((character) => {
     return character.id === parseInt(characterId);
   });
-  console.log(characterSelected);
   return (
     <>
       <main>
+        <Header />
         <Routes>
           <Route
             path="/"

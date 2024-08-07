@@ -17,6 +17,7 @@ function Filter({ onChangeName, filterName }) {
           onChange={handleChange}
           placeholder="Busca a tu personaje"
           value={filterName}
+          autoFocus
         />
       </div>
     </form>
