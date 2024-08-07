@@ -6,6 +6,7 @@ import CharacterList from "./CharacterList";
 import Filter from "./Filter";
 import { useLocation, matchPath } from "react-router";
 import CharacterDetail from "./CharacterDetail";
+import MessageNotFound from "./MessageNotFound";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -56,7 +57,7 @@ function App() {
             path="/character/:characterId"
             element={
               characterSelected === undefined ? (
-                <p> Sorry :( El personaje que buscas no existe</p>
+                <MessageNotFound />
               ) : (
                 <CharacterDetail character={characterSelected} />
               )
