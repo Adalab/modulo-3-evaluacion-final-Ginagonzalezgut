@@ -8,6 +8,7 @@ import { useLocation, matchPath } from "react-router";
 import CharacterDetail from "./CharacterDetail";
 import MessageNotFound from "./MessageNotFound";
 import Header from "./Header";
+import MessageNoResults from "./MessageNoResults";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -50,7 +51,7 @@ function App() {
                 {filteredCharacters.length > 0 ? (
                   <CharacterList characters={filteredCharacters} />
                 ) : (
-                  <p>no hay ningun nombre</p>
+                  <MessageNoResults filterName={filterName} />
                 )}
               </div>
             }
