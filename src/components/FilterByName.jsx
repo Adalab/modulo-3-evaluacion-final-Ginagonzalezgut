@@ -15,7 +15,7 @@ function FilterByName({ onChangeName, filterName }) {
           name="name"
           id="name"
           onChange={handleChange}
-          placeholder="Busca a tu personaje"
+          placeholder="Search your character"
           value={filterName}
           autoFocus
         />

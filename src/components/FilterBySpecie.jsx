@@ -8,16 +8,13 @@ function FilterBySpecie({ onChangeSpecies }) {
   }
   return (
     <form className="specieFilter" action="">
-      {/* <label className="specieFilter__title" htmlFor="specieFilter">
-        Filter by specie:
-      </label> */}
       <select
         className="specieFilter__select"
         name=""
         id="specieFilter"
         onChange={handleSpecies}
       >
-        <option value="All">All</option>
+        <option value="All">All </option>
         <option value="Human">Human</option>
         <option value="Alien">Alien</option>
       </select>
