@@ -58,11 +58,13 @@ function App() {
             path="/"
             element={
               <div>
-                <FilterByName
-                  filterName={filterName}
-                  onChangeName={handleFilterName}
-                />
-                <FilterBySpecie onChangeSpecies={handleFilterSpecies} />
+                <div className="filters">
+                  <FilterByName
+                    filterName={filterName}
+                    onChangeName={handleFilterName}
+                  />
+                  <FilterBySpecie onChangeSpecies={handleFilterSpecies} />
+                </div>
                 {filteredCharacters.length > 0 ? (
                   <CharacterList characters={filteredCharacters} />
                 ) : (

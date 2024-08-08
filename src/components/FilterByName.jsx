@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../scss/components/Filter.scss";
+import "../scss/components/FilterByName.scss";
 
 function FilterByName({ onChangeName, filterName }) {
   function handleChange(event) {

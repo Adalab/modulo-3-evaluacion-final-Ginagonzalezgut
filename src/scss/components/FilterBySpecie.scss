@@ -1,0 +1,27 @@
+.specieFilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //   margin: 0 auto 60px;
+  border: 2px solid #42b4ca;
+  //   background-color: white;
+  //   padding: 10px;
+  //   width: 100%;
+  //   max-width: 800px;
+
+  &__title {
+    padding-right: 15px;
+    color: #42b4ca;
+    text-align: start;
+  }
+  &__select {
+    border: 0;
+    padding: 5px;
+    // max-width: 200px;
+    // max-height: 100px;
+    height: 40px;
+    width: 100%;
+    outline-color: #00ff00;
+  }
+}
