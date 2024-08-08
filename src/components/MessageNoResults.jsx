@@ -6,7 +6,7 @@ function MessageNoResults({ filterName }) {
     <div className="messageNoResults">
       <p>
         Sorry Morty, your search for
-        <b className="messageNoResults__term"> "{filterName}"</b> did not match
+        <b className="messageNoResults__term"> {filterName} </b> did not match
         any character.
       </p>
     </div>
