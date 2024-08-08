@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../scss/components/FilterBySpecie.scss";
 
-function FilterBySpecie({ onChangeSpecies }) {
+function FilterBySpecie({ onChangeSpecies, filterSpecie }) {
   function handleSpecies(event) {
     event.preventDefault();
     onChangeSpecies(event.target.value);
@@ -13,8 +13,9 @@ function FilterBySpecie({ onChangeSpecies }) {
         name=""
         id="specieFilter"
         onChange={handleSpecies}
+        value={filterSpecie}
       >
-        <option value="All">All </option>
+        <option value="All">All</option>
         <option value="Human">Human</option>
         <option value="Alien">Alien</option>
       </select>
@@ -23,5 +24,6 @@ function FilterBySpecie({ onChangeSpecies }) {
 }
 FilterBySpecie.propTypes = {
   onChangeSpecies: PropTypes.func,
+  filterSpecie: PropTypes.string,
 };
 export default FilterBySpecie;

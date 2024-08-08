@@ -63,7 +63,10 @@ function App() {
                     filterName={filterName}
                     onChangeName={handleFilterName}
                   />
-                  <FilterBySpecie onChangeSpecies={handleFilterSpecies} />
+                  <FilterBySpecie
+                    filterSpecie={filterSpecie}
+                    onChangeSpecies={handleFilterSpecies}
+                  />
                 </div>
                 {filteredCharacters.length > 0 ? (
                   <CharacterList characters={filteredCharacters} />
